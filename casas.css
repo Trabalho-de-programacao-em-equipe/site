@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Katibeh&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-casas{
+    width: 1500px;
+    margin: 100px; 
+     
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 400px 0px 400px;
+    
+    
+}
+
+.Grifinoria{
+    background: url("./imagens/brilho.PNG"),
+        linear-gradient(217deg, rgb(79, 14, 14), rgb(13, 0, 0) 70%),
+        linear-gradient(127deg, rgb(109, 43, 43), rgb(79, 14, 14) 70%),
+        linear-gradient(336deg, rgb(79, 14, 14), rgb(79, 14, 14) 70%);
+    }
+
+.Lufa-Lufa{
+    background: url("./imagens/brilho.PNG"),
+        linear-gradient(217deg, #a98e24, rgb(14, 8, 1) 70%),
+        linear-gradient(127deg,  #a98e24, #a98e24 70%),
+        linear-gradient(336deg, rgb(172, 144, 60) , rgb(172, 144, 60) 70%);
+        
+}
+
+.Sonserina{
+    background: url("./imagens/brilho.PNG"),
+        linear-gradient(217deg, rgb(1, 64, 25), rgb(0, 6, 2) 70%),
+        linear-gradient(127deg, rgb(8, 94, 0), rgb(1, 64, 25) 70%),
+        linear-gradient(336deg, rgb(19, 111, 45), rgb(19, 111, 45) 70%);
+}
+
+.Corvinal{
+    background: url("./imagens/brilho.PNG"),
+        linear-gradient(217deg, rgb(55, 113, 145),rgb(1, 5, 16) 70%),
+        linear-gradient(127deg, rgb(14, 53, 81), rgb(55, 82, 117) 70%),
+        linear-gradient(336deg, rgb(62, 127, 157), rgb(62, 127, 157) 70%);
+}
+
+
+h1{
+    text-align: center;
+    font-size: 200px;
+    margin: 50px;
+    color: rgb(192, 186, 186);
+    font-family: "Girassol", serif;
+    margin: 60px;
+}
+
+h2{
+    text-align: center;
+    font-size: 100px;
+    margin: 50px;
+    color: rgb(192, 186, 186);
+    font-family: "Girassol", serif;
+    margin-top: 200px;
+
+}
+
+p{
+    font-size: 125px;
+    text-align: justify;
+    margin-top: 80px;
+    color: rgb(192, 186, 186);
+    font-family: "Katibeh";
+    margin-inline: 60px;
+}
+
+.content{
+    height: 1000px;
+    width: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: static;
+    transform: translate(0%,0%);
+    margin: 70px;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 50px;
+    left: 35%;
+    transform: translate(-50);
+    display: flex;
+}
+
+.bar{
+    width: 100px;
+    height: 27px;
+    border: 2px solid rgb(109, 43, 43);
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bar:hover{
+    background-color:rgb(109, 43, 43);
+}
+
+.bar-2{
+    width: 100px;
+    height: 27px;
+    border: 2px solid rgb(8, 94, 0);
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bar-2:hover{
+    background-color:rgb(8, 94, 0);
+}
+
+.bar-3{
+    width: 100px;
+    height: 27px;
+    border: 2px solid #a98e24;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bar-3:hover{
+    background-color:#a98e24;
+}
+
+.bar-4{
+    width: 100px;
+    height: 27px;
+    border: 2px solid rgb(14, 53, 81);
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bar-4:hover{
+    background-color:rgb(14, 53, 81);
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~.s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~.s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~.s1 {
+    margin-left: -40%;
+}
+
+#slide1-1:checked ~.s1 {
+    margin-left: 0;
+}
+
+#slide2-2:checked ~.s1 {
+    margin-left: -20%;
+}
+
+#slide3-3:checked ~.s1 {
+    margin-left: -40%;
+}
